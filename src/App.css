@@ -1,0 +1,196 @@
+.logo {
+    display: flex;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 20px;
+}
+
+.logo img {
+    width: 7%;
+    height: 7%;
+}
+
+.logo h1 {
+    color: rgb(0, 123, 255);
+    text-shadow: 1px 1px black;
+}
+
+.tableData {
+    font-family: Arial, sans-serif;
+    /* Define a fonte para a tabela */
+    border-collapse: collapse;
+    /* Remove as bordas entre as células */
+    width: 100%;
+    /* Define a largura da tabela */
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.tableData th,
+.tableData td {
+    padding: 8px;
+    /* Adiciona espaço interno para as células da tabela */
+    text-align: left;
+    /* Alinha o texto das células à esquerda */
+    border-bottom: 1px solid #ddd;
+    /* Adiciona uma borda inferior fina para as células */
+}
+
+.tableData th {
+    background-color: rgb(0, 123, 255);
+    /* Define a cor de fundo para o cabeçalho da tabela */
+    color: #fff;
+    /* Define a cor do texto para o cabeçalho da tabela */
+    font-weight: bold;
+    /* Define o peso da fonte para o cabeçalho da tabela */
+}
+
+.tableData tr:hover {
+    background-color: #f5f5f5;
+    /* Define a cor de fundo para a linha da tabela quando o mouse está sobre ela */
+}
+
+.tableData Button {
+    margin-left: 5px;
+}
+
+.buttonCadastrar {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.modalHeader {
+    background-color: rgb(0, 123, 255);
+    color: #fff;
+}
+
+.form {
+    max-width: 500px;
+    /* Define a largura máxima do formulário */
+    margin: 0 auto;
+    /* Centraliza o formulário na página */
+    font-family: Arial, sans-serif;
+    /* Define a fonte para o formulário */
+    padding: 20px;
+    /* Adiciona espaço interno para o formulário */
+    border-radius: 10px;
+    /* Adiciona bordas arredondadas ao formulário */
+}
+
+.form label {
+    display: block;
+    /* Define a etiqueta como um elemento de bloco */
+    margin-bottom: 10px;
+    /* Adiciona espaço inferior à etiqueta */
+    font-weight: bold;
+    /* Define o peso da fonte da etiqueta */
+}
+
+.form input[type="text"],
+.form input[type="email"] {
+    display: block;
+    /* Define o campo de entrada como um elemento de bloco */
+    width: 100%;
+    /* Define a largura do campo de entrada */
+    padding: 10px;
+    /* Adiciona espaço interno para o campo de entrada */
+    border: 1px solid #ddd;
+    /* Adiciona bordas nos campos de entrada*/
+    border-radius: 5px;
+    /* Adiciona bordas arredondadas ao campo de entrada */
+    margin-bottom: 20px;
+    /* Adiciona espaço inferior ao campo de entrada */
+    box-sizing: border-box;
+    /* Define a caixa do modelo de caixa */
+    font-size: 16px;
+    /* Define o tamanho da fonte do campo de entrada */
+}
+
+.form textarea {
+    display: block;
+    /* Define a área de texto como um elemento de bloco */
+    width: 100%;
+    /* Define a largura da área de texto */
+    padding: 10px;
+    /* Adiciona espaço interno para a área de texto */
+    border: none;
+    /* Remove a borda padrão da área de texto */
+    border-radius: 5px;
+    /* Adiciona bordas arredondadas à área de texto */
+    margin-bottom: 20px;
+    /* Adiciona espaço inferior à área de texto */
+    box-sizing: border-box;
+    /* Define a caixa do modelo de caixa */
+    font-size: 16px;
+    /* Define o tamanho da fonte da área de texto */
+}
+
+.form input[type="submit"] {
+    background-color: rgb(0, 123, 255);
+    /* Define a cor de fundo do botão de envio */
+    color: #fff;
+    /* Define a cor do texto do botão de envio */
+    border: none;
+    /* Remove a borda padrão do botão de envio */
+    padding: 12px 24px;
+    /* Adiciona espaço interno para o botão de envio */
+    font-size: 16px;
+    /* Define o tamanho da fonte do botão de envio */
+    border-radius: 5px;
+    /* Adiciona bordas arredondadas ao botão de envio */
+    cursor: pointer;
+    /* Transforma o cursor em uma mão ao passar por cima do botão de envio */
+    transition: background-color 0.3s ease-in-out;
+    /* Adiciona uma transição suave para a cor de fundo do botão de envio */
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.form input[type="submit"]:hover {
+    background-color: rgb(0, 98, 204);
+    /* Define a cor de fundo do botão de envio quando o mouse está sobre ele */
+}
+
+select {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+/* Estilo ao passar o mouse */
+select:hover {
+    border-color: #888;
+}
+
+/* Estilo ao focar */
+select:focus {
+    border-color: #555;
+    box-shadow: 0 0 4px #555;
+}
+
+/* Estilo da seta do select */
+select::-ms-expand {
+    display: none;
+}
+
+select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    color: #888;
+    pointer-events: none;
+}
+
+/* Estilo das opções do select */
+select option {
+    padding: 8px;
+}
